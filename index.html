@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="profile-deddy" src="./assets/deddy.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, Je suis</p>
+        <h1 class="title">RAHARISOLOFO Deddy</h1>
+        <p class="section__text__p2">Ingénieur en Informatique</p>
+        <p class="section__text__p2">Spécialisation: Génie Logiciel et Base de Données</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV_Deddy.pdf')"
+          >
+            Télécharger CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='https://wa/+261345314252'">
+            Whatsapp
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/deddy-rahar-08870b209/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Deddy1022'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Pour en savoir plus</p>
+      <h1 class="title">Informations me concernant</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/dev.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Plusieurs projets <br /> dans le developpement Backend et Frontend</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Diplôme de Licence Professionnelle<br />Diplôme d'Ingénieur <br>En Informatique</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Je me nomme Deddy, passionné par le domaine de l'informatique, et plus particulièrement par le développement d'applications web et mobiles. 
+              Ce qui me distingue, c'est ma créativité, mon sens de l'organisation et mon autonomie. 
+              Ma rigueur organisationnelle a toujours été un levier pour atteindre mes objectifs ou ajuster mes actions en conséquence. 
+              J'apprécie le travail en équipe, tout en étant capable d'évoluer de manière autonome dans des missions.
+              Je suis un développeur d'application, et ma passion pour l'informatique remonte à ma jeunesse, où j'ai commencé à coder dans divers langages tels que Javascript et PHP. 
+              Ma polyvalence se reflète dans ma maîtrise des différentes étapes techniques de la création d'un site ou d'une application web, allant de la compréhension des besoins des utilisateurs au développement frontend et backend, en passant par la maintenance. 
+              Bien que je valorise le travail d'équipe, je continue également à me former de manière autodidacte au quotidien.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Mes</p>
+      <h1 class="title">Compétences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Avancée</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Avancée</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Vue</h3>
+                  <p>intermédiaire</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JSP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Outils</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SGBD MySQLi</h3>
+                  <p>Avancée</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postgres</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Vous pouvez voir</p>
+      <h1 class="title">Projets Recents</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video class="project-img" src="assets/srsp.mp4" autoplay loop muted></video>
+            </div>
+            <h2 class="experience-sub-title project-title">Gestion RH</h2>
+            <div class="btn-container">
+              <p>
+                Une application de gestion des activités des agents, allant dans la modification des données à la gestion des présences
+                et l'enclenchement des dossiers pour ensuite générer un des circuits suivi par les dossiers des agents.
+              </p><br>
+            </div>
+            <p>PHP/CodeIgniter, HTML, CSS, JS</p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video class="project-img" src="assets/Java.mp4" autoplay loop muted></video>
+            </div>
+            <h2 class="experience-sub-title project-title">Gestion des salariés</h2>
+            <div class="btn-container">
+              <p>
+                Une application desktop pour la gestiondes salariés permettant la coonexions aux bases de données via des sockets
+              </p>
+            </div>
+            <p>
+              Java, PHP, CSS
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video class="project-android" src="assets/heures.mp4" autoplay loop muted></video>
+            </div>
+            <h2 class="experience-sub-title project-title">Gestions des heures supplémentaires</h2>
+            <div class="btn-container">
+              <p>Application mobile centrée dans la gestion des heures supplémentaire par professeur.</p>
+            </div>
+            <p>
+              Java Native, PHP
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Contactez-moi</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:raharisolofodeddy66@gmail.com">Gmail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/deddy-rahar-08870b209/" target="blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 RAHARISOLOFO Deddy.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
